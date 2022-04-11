@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+body
+    margin: 0
+    padding: 0
+    background: url(../images/backgraund.png)
+    background-size: 50%
+    background-position: 100% 0
+    background-repeat: no-repeat
+    font-family: Montserrat
+    .container
+        width: 80%
+        margin: 0 auto
+        position: relative
+    button
+        cursor: pointer
+.body
+    width: 100%
+    overflow: hidden
+    position: relative
+
+.chat
+    position: fixed
+    z-index: 9999   
+    bottom: 10px
+    right: 20px
+    display: flex
+    align-items: end
+    .main-chat
+        width: 300px
+        height: 500px
+        background: #fff
+        border-radius: 15px
+        overflow: hidden
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
+        display: none
+        .title
+            background: #1E1E34
+            color: #fff
+            padding: 5px 15px
+            .top
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .chat-logo
+                    display: flex
+                    align-items: center
+                    p
+                        margin-right: 5px
+            .bottom
+                font-weight: 600
+                font-size: 13px
+                line-height: 18px
+        .text-input
+            display: flex
+            align-items: center
+            justify-content: space-evenly
+            margin-top: 320px
+            input
+                width: 70%
+                background: #E9F5F8
+                opacity: 0.6
+                border-radius: 8px
+                border: none
+                padding: 10px
+                outline: none
+                &::placeholder
+                    color: #2B2B4F
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 17px
+            .send-btn
+                cursor: pointer
+                svg
+                    width: 20px
+    .chat-btn
+        display: flex
+        margin-left: 20px
+        .chat-open, .chat-close
+            background: #2B2B4F
+            width: 50px
+            height: 50px
+            padding: 12px 10px 7px 13px
+            box-sizing: border-box
+            border-radius: 50px
+            cursor: pointer
+            svg
+                width: 25px
+        .chat-close
+            background: #F1D125
+            display: none
+.chat-active
+    .chat-btn
+        .chat-open
+            display: none
+        .chat-close
+            display: block
+
+.call
+    width: 300px
+    overflow: hidden
+    background: #fff
+    border-radius: 10px
+    position: fixed
+    margin-top: 5px
+    right: 130px
+    padding: 0 0 20px 0
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
+    display: none
+    .title
+        display: flex
+        justify-content: space-around
+        background:#1E1E34
+        padding: 10px 0
+        svg
+            &:last-child
+                cursor: pointer
+    .text
+        text-align: center
+        h3
+            font-weight: 700
+            font-size: 20px
+            line-height: 10px
+            color: #2EB4A7
+        p
+            font-weight: 500
+            font-size: 12px
+            line-height: 17px
+            text-align: center
+            color: #1E1E34
+
+    .call-icons
+        display: flex
+        justify-content: center
+        gap: 0 10px
+        svg
+            width: 40px
+
+.menu
+    background: #1E1E34
+    position: fixed
+    width: 100%
+    z-index: 99999
+    .container
+        width: 80%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 26px 0
+    button
+        background: #49BFB0
+        border-radius: 10px
+        border: none
+        padding: 0 18px
+        color: #fff
+        font-weight: 800
+        display: flex
+        align-items: center
+        svg
+            width: 15px
+            margin-right: 5px
+
+header
+    width: 100%
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    position: relative
+    .mian-text
+        width: 500px
+        line-height: 25px
+        .title
+            margin-bottom: 35px
+            h2
+                font-weight: 500
+                b
+                    color: #49BFB0
+        .text
+            margin-bottom: 40px
+        .button
+            button
+                background: #F1D125
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+                border-radius: 7px
+                color: #fff
+                border: none
+                padding: 14px 22px
+                font-weight: 800
+    .illustration
+        img
+            width: 550px
+
+    
+.content-2
+    width: 780px
+    margin-top: 30px
+    .title
+        h2
+            font-weight: 600
+            font-size: 28px
+            line-height: 34px
+            color: #2CBCD4
+    .text
+        p
+            font-weight: 500
+            font-size: 18px
+            line-height: 28px
+            text-align: justify
+            color: #2B2B4F
+    .list
+        margin-left: -40px
+        margin-top: 35px
+        li
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            list-style: none
+            display: flex
+            align-items: start
+            &::before
+                content: "\2022"
+                color: #2CBCD4
+                font-weight: bold
+                display: inline-block
+                width: 1em
+                margin-top: 2px
+                font-size: 25px
+            p
+                margin-top: 5px
+            
+
+
+.content-3
+    background: #3251C5
+    color: #fff
+    padding: 55px 0 35px 0
+    margin-top: 87px
+    .title
+        h2
+            font-weight: 600
+            font-size: 28px
+            line-height: 34px
+    .blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .block
+            width: 600px
+            margin-right: 75px
+            display: flex
+            margin-bottom: 75px
+            svg
+                margin-right: 20px
+            &:nth-child(2)     
+                margin-right: 0
+            &:nth-child(4)     
+                margin-right: 0
+            .text
+                margin-top: -25px
+                h3
+                    font-weight: 600
+                    font-size: 22px
+                    line-height: 27px
+                    text-align: justify
+                p
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 22px
+                    text-align: justify
+    .button
+        display: flex
+        justify-content: end
+        button
+            background: #FF903F
+            border-radius: 7px
+            padding: 14px 22px
+            border: none
+            color: #fff
+            font-weight: 700
+
+
+.content-4
+    text-align: center
+    margin-top: 60px
+    .title
+        h2
+            font-weight: 600
+            font-size: 24px
+            line-height: 29px
+    .cards
+        display: flex
+        align-items: center
+        justify-content: space-around
+        margin-top: 60px
+        .card
+            .cricle
+                width: 20px
+                height: 20px
+                border-radius: 30px
+                margin: 5px auto
+                p
+                    margin-top: 5px
+            &:nth-child(1)
+                .cricle
+                    background: #49BFB0
+            &:nth-child(2)
+                .cricle
+                    background: #F1D125
+            &:nth-child(3)
+                .cricle
+                    background: #49BFB0
+            &:nth-child(4)
+                .cricle
+                    background: #F1D125
+            p
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                text-align: justify
+                    
+
+.content-5
+    background: #FF903F
+    color: #fff
+    padding: 65px 0
+    margin-top: 70px
+    .text
+        width: 770px
+        h2
+            font-weight: 800
+            font-size: 25px
+            line-height: 30px
+        h3
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+        p
+            font-weight: 500
+            font-size: 18px
+            line-height: 22px
+    img
+        display: none
+    button
+        background: #2B2B4F
+        border-radius: 7px
+        font-weight: 700
+        font-size: 15px
+        line-height: 18px
+        color: #fff
+        border: none
+        padding: 16px
+
+
+.content-6
+    font-family: 'Nunito Sans'
+    margin-top: 65px
+    .title
+        h2
+            font-weight: 800
+            font-size: 28px
+            line-height: 38px
+            color: #2B2B4F
+    .parts
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 0 200px
+        .part
+            width: 280px 
+            margin-right: 120px
+            &:nth-child(3)
+                margin-right: 0
+                ul
+                    border: none
+            &:nth-child(6)
+                margin-right: 0
+                ul
+                    border: none
+            h3
+                font-weight: 900
+                font-size: 28px
+                line-height: 38px
+                color: #49BFB0
+                display: flex
+                svg
+                    margin-top: 17px
+                    margin-left: 5px
+                .arrows
+                    display: none
+            ul
+                border-right: 1px solid #49BFB0
+                width: 210px
+                height: 300px
+                margin-left: -40px
+                margin-bottom: 50px
+                li
+                    list-style: none
+                    font-weight: 700
+                    font-size: 18px
+                    line-height: 25px
+                    color: #2B2B4F
+                    margin-bottom: 9px
+                    svg
+                        margin-right: 12px
+
+.content-7
+    background: #2B2B4F
+    color: #fff
+    padding: 70px 0
+    .container
+        display: flex
+        justify-content: space-between
+        align-items: start
+        .text-btn
+            width: 668px
+            h2
+                font-weight: 700
+                font-size: 25px
+                line-height: 30px
+                color: #49BFB0
+            p
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                text-align: justify
+            button
+                background: #49BFB0
+                border-radius: 7px
+                border: none
+                padding: 14px 40px
+                font-weight: 600
+                font-size: 15px
+                line-height: 18px
+                color: #fff
+                margin-top: 60px
+        .discount
+            display: flex
+            align-items: center
+            margin-top: 20px
+            h2
+                font-family: 'Nunito Sans'
+                font-weight: 900
+                font-size: 30px
+                line-height: 40px
+                margin-right: 13px
+
+.content-8
+    margin-top: 65px
+    .container
+        .title
+            text-align: center
+            h2
+                font-weight: 600
+                font-size: 28px
+                line-height: 34px
+        .parts
+            margin-top: 60px
+            display: flex
+            flex-wrap: wrap
+            gap: 0 100px
+            justify-content: center
+            .part
+                width: 350px
+                h3
+                    font-weight: 800
+                    font-size: 20px
+                    line-height: 24px
+                    color: #49BFB0
+                p
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 22px
+
+.form
+    background: url(../images/formback.png)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    padding: 43px 0
+    margin-top: 90px
+    .container
+        width: 500px
+        .title
+            h2
+                font-weight: 600
+                font-size: 22px
+                line-height: 27px
+                color: #101040
+            p
+                font-weight: 600
+                font-size: 16px
+                line-height: 20px
+                color: #49BFB0
+        form
+            display: flex
+            flex-direction: column
+            input, textarea
+                background: #fff
+                border: 0.5px solid #49BFB0
+                box-sizing: border-box
+                border-radius: 8px
+                padding: 16px 20px
+                font-family: 'Nunito Sans'
+                font-weight: 300
+                font-size: 14px
+                line-height: 19px
+                color: #1E1E34
+                margin-bottom: 5px
+                outline: none
+                &::placeholder
+                    color: #1E1E34
+                &:focus
+                    border: 1px solid #2E3192
+                    font-weight: 700
+                    font-size: 14px
+                    line-height: 19px
+                    &::placeholder
+                        color: #49BFB0
+            textarea
+                height: 145px
+                resize: none
+            .chack
+                display: flex
+                align-items: center
+                input
+                    appearance: none
+                    width: 10px
+                    height: 10px
+                    background: transparent
+                    border: none
+                    padding: 11px 10px 10px 11px
+                    border-radius: 0
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    border: 1px solid #2B2B4F
+                    box-sizing: border-box
+                    border-radius: 3px
+                    &:checked
+                        &::before
+                            font: var(--fa-font-solid)
+                            content: '\f0c8'
+                            text-rendering: auto
+                            color: #41B883
+                            -webkit-font-smoothing: antialiased
+            .button
+                display: flex
+                justify-content: right
+                input[type="submit"]
+                    background: #2E3192
+                    border-radius: 8px
+                    font-family: 'Nunito Sans'
+                    font-style: normal
+                    font-weight: 900
+                    font-size: 14px
+                    line-height: 19px
+                    color: #fff
+                    border: none
+                    width: 150px
+                    padding: 16px 25px
+                
+
+.questions
+    width: 70%
+    font-family: 'Nunito Sans'
+    margin-top: 100px
+    h2
+        font-weight: 900
+        font-size: 28px
+        line-height: 38px
+        color: #2B2B4F
+    .question
+        border-bottom: 1px solid #2B2B4F
+        overflow: hidden
+        height: 60px
+        transition: 0.3s
+        h3
+            font-weight: 400
+            font-size: 18px
+            line-height: 25px
+            color: #2B2B4F
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .fa-chevron-up
+                display: none
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 25px
+            color: #2B2B4F
+    .paragraph-active
+        height: auto
+        border-color: #49BFB0
+        h3
+            font-weight: 800
+            font-size: 20px
+            line-height: 27px
+            color: #49BFB0
+        .arrows
+            .fa-chevron-up
+                display: block
+            .fa-chevron-down
+                display: none
+
+footer
+    background: #1E1E34
+    color: #fff
+    padding: 130px 0
+    text-align: center
+    margin-top: 120px
+    p
+        margin-bottom: 50px
+    .webicons
+        display: flex
+        justify-content: center
+    a
+        text-decoration: none
+        color: #fff
+        background: linear-gradient(255.8deg, #44A5DA -33.89%, #6D7FE5 26.66%, #28BFD3 75.5%, #6C7FE5 122.88%)
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25)
+        border-radius: 30px
+        margin: 0 10px
+        width: 50px
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+
+@media screen and (max-width: 1440px)
+    .menu
+        .container
+            padding: 20px 0
+    header
+        .illustration
+            img
+                width: 470px
+    .content-3
+        padding: 55px 0 35px 0
+        margin-top: 87px
+        .blocks
+            .block
+                width: 400px
+                margin-top: 30px    
+                .text
+                    margin-top: -25px
+                    h3
+                        font-size: 22px
+                        line-height: 23px
+                    p
+                        font-size: 14px
+    .content-6
+        .parts
+            gap: 0 20px
+            .part
+                width: 250px
+                h3
+                    font-weight: 900
+                    font-size: 25px
+                    line-height: 38px
+                    color: #49BFB0
+                    display: flex
+                    svg
+                        margin-top: 17px
+                        margin-left: 5px
+
+@media screen and (max-width: 1200px)
+    .content-6
+        margin-bottom: 60px
+        .title
+            h2
+                font-weight: 800
+                font-size: 28px
+                line-height: 38px
+                color: #2B2B4F
+        .parts
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            gap: 0
+            .part
+                width: 100% 
+                margin-right: 0
+                overflow: hidden
+                height: 70px
+                transition: 0.3s
+                border-bottom: 1px solid #C4C4C4
+                h3
+                    font-size: 18px
+                    line-height: 38px
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    svg
+                        display: none
+                    .arrows
+                        display: block
+                        .fa-chevron-up
+                            display: none
+                ul
+                    border: none
+                    height: auto
+                    margin-bottom: 0
+                    width: auto
+                    li
+                        list-style: none
+                        font-weight: 700
+                        font-size: 15px
+                        line-height: 23px
+                        color: #2B2B4F
+                        margin-bottom: 9px
+                        svg
+                            display: none
+            .paragraph-active
+                height: auto
+                border-color: #49BFB0
+                h3
+                    .arrows
+                        .fa-chevron-down
+                            display: none
+                        .fa-chevron-up
+                            display: block
+
+@media screen and (max-width: 768px)
+    body
+        background: #fff
+    .chat
+        flex-direction: column
+        .main-chat
+            margin-bottom: 5px
+    .call
+        right: 10px
+    .menu
+        box-shadow: 0 10px 13px rgba(0, 0, 0, 0.2)
+        .container
+            width: 67%
+            display: flex
+            justify-content: space-between
+            padding: 10px 0
+            .logo
+                svg
+                    width: 100px
+        button
+            padding: 10px
+            p
+                display: none
+            svg
+                margin-right: 0
+                width: 20px
+                height: 20px
+    .questions
+        width: 100%
+        .question
+            padding: 20px 0
+            &:first-child
+                padding: 0
+    
+    header
+        width: 100%
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        background: url(../images/backmobile.png)
+        background-repeat: no-repeat
+        background-position: 150% 110%
+        .mian-text
+            width: 300px
+            line-height: 25px
+            .title
+                margin-top: 10%
+                margin-bottom: 0
+                h2
+                    ont-weight: 500
+                    font-size: 18px
+                    line-height: 22px
+                    color: #08233E
+                    b
+                        color: #49BFB0
+            .text
+                display: none
+            .button
+                position: absolute
+                bottom: 20px
+                width: 100%
+                text-align: center
+                left: 0
+                button
+                    background: #F1D125
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+                    border-radius: 7px
+                    color: #fff
+                    border: none
+                    width: 80%
+                    padding: 14px 22px
+                    font-weight: 800
+        .illustration
+            margin-left: 130px
+            margin-top: -50px
+            img
+                width: 230px
+
+    .content-2
+        width: 100%  
+        .title
+            h2
+                font-weight: 900
+                font-size: 18px
+                line-height: 22px
+                color: #2CBCD4                                                              
+        .text
+            display: none
+        .list
+            margin-left: -40px
+            margin-top: 35px
+            ul
+                width: 90%
+            li
+                font-weight: 600
+                font-size: 14px
+                line-height: 19px
+                color: #2B2B4F
+                list-style: none
+                &::before
+                    font-size: 25px
+                p
+                    margin-top: 0
+                &:nth-child(2)
+                    p
+                        margin-left: 10px
+    
+    .content-3
+        padding: 55px 0 35px 0
+        margin-top: 87px
+        .title
+            h2
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+                text-align: center
+        .blocks
+            display: flex
+            flex-direction: column
+            .block
+                width: 100%
+                margin-right: 75px
+                display: flex
+                margin-bottom: 35px
+                svg
+                    display: none   
+                &:nth-child(2)     
+                    margin-right: 0
+                &:nth-child(4)     
+                    margin-right: 0
+                .text
+                    width: 100%
+                    margin-top: -25px
+                    h3
+                        font-weight: 600
+                        font-size: 16px
+                        line-height: 20px
+                        text-align: justify
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 17px
+                        text-align: justify
+        .button
+            width: 100%
+            button
+                width: 100%
+
+    .content-4
+        text-align: center
+        margin-top: 60px
+        .title
+            h2
+                text-align: left
+                font-weight: 600
+                font-size: 20px
+                line-height: 24px
+        .cards
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            gap: 30px
+            margin-top: 60px
+            .card
+                width: 100px
+                svg
+                    width: 50px
+                .cricle
+                    width: 15px
+                    height: 15px
+                    border-radius: 30px
+                    margin: 5px auto
+                p
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 17px
+                    text-align: center
+
+    .content-5
+        padding: 65px 0
+        margin-top: 70px
+        overflow: hidden
+        .text
+            width: 100%
+            h2
+                font-weight: 800
+                font-size: 20px
+                line-height: 24px
+            h3
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+            p
+                display: none
+        img
+            margin-bottom: -70px
+            margin-left: 110px
+            margin-top: -80px
+            display: block
+        button
+            width: 100%
+            position: absolute                   
+
+    .content-7
+        padding: 70px 0
+        .container
+            display: flex
+            flex-direction: column
+            .text-btn
+                width: 90%
+                h2
+                    font-weight: 700
+                    font-size: 20px
+                    line-height: 24px
+                p
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 20px
+                button
+                    position: absolute
+                    bottom: -40px
+                    z-index: 1
+                    width: 100%
+            .discount
+                display: flex
+                align-items: center
+                margin-top: -20px
+                margin-bottom: 40px
+                h2
+                    font-weight: 900
+                    font-size: 30px
+                    line-height: 40px
+                    margin-right: 13px
+        .dec
+            border: 3px solid #fff
+            width: 600px
+            height: 600px
+            border-radius: 700px / 400px 700px 700px 700px
+            position: absolute
+            left: -100px
+            margin-top: 20px
+            z-index: 0
+
+    .content-8
+        .container
+            .title
+                text-align: center
+                h2
+                    font-weight: 600
+                    font-size: 20px
+                    line-height: 24px
+            .parts
+                margin-top: 60px
+                gap: 0 50px
+                .part
+                    width: 95%
+
+    .form
+        .container
+            width: 90%
+            form
+                .chack
+                    display: flex
+                    align-items: center
+                    input
+                        padding: 11px
+                        &:checked
+                            &::before
+                                color: #2B2B4F
+                .button
+                    input[type="submit"]
+                        width: 100%
