@@ -588,11 +588,11 @@ header .illustration img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0 200px;
+  gap: 0 100px;
 }
 
 .content-6 .parts .part {
-  width: 280px;
+  width: 13%;
   margin-right: 120px;
 }
 
@@ -1079,6 +1079,22 @@ footer a {
   .content-6 .parts .part h3 svg {
     margin-top: 17px;
     margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .content-6 .parts {
+    gap: 0 70px;
+  }
+  .content-6 .parts .part {
+    width: 20%;
+  }
+  .content-6 .parts .part h3 {
+    font-size: 19px;
+    line-height: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

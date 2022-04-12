@@ -365,9 +365,9 @@ header
         display: flex
         flex-wrap: wrap
         justify-content: center
-        gap: 0 200px
+        gap: 0 100px
         .part
-            width: 280px 
+            width: 13% 
             margin-right: 120px
             &:nth-child(3)
                 margin-right: 0
@@ -666,6 +666,18 @@ footer
                     svg
                         margin-top: 17px
                         margin-left: 5px
+
+@media screen and (max-width: 1300px)
+    .content-6
+        .parts
+            gap: 0 70px
+            .part
+                width: 20%
+                h3
+                    font-size: 19px
+                    line-height: 25px
+                    align-items: center
+
 
 @media screen and (max-width: 1200px)
     .content-6
